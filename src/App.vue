@@ -167,7 +167,7 @@ export default {
       this.userData.cardsList.push(cardsForm)
     },
     removeCard(card) {
-      this.userData.cardsList = this.cardsList.filter(c => c.id !== card.id)
+      this.userData.cardsList = this.userData.cardsList.filter(c => c.id !== card.id)
     },
     addToFavorites(dish) {
       dish.favorite = true

@@ -161,7 +161,7 @@ export default {
       this.userData.addressesList.push(addressesForm)
     },
     removeAddress(address) {
-      this.userData.addressesList = this.addressesList.filter(a => a.id !== address.id)
+      this.userData.addressesList = this.userData.addressesList.filter(a => a.id !== address.id)
     },
     createCard(cardsForm) {
       this.userData.cardsList.push(cardsForm)

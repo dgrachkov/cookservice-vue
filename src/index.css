@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Gilroy";
+    font-weight: 700;
+    src: url('/public/fonts/Gilroy-Bold.woff2') format('woff2'),
+         url('/public/fonts/Gilroy-Bold.woff') format('woff');
+  }
+  @font-face {
+    font-family: "Gilroy";
+    font-weight: 300;
+    src: url('/public/fonts/Gilroy-Light.woff2') format('woff2'),
+         url('/public/fonts/Gilroy-Light.woff') format('woff');
+  }
+}

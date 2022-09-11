@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="relative">
     <app-navbar :deposit="userData.deposit"></app-navbar>
 
     <router-view
@@ -45,6 +45,7 @@ export default {
         deposit: 27580,
         myOrders: [],
         favoriteDishes: [],
+        isAuth: false,
       },
       cart: {
         listDishes: [],
@@ -255,7 +256,7 @@ export default {
     removeOrder(order) {
       order.status = 'Отменен'
     }
-  }
+  },
 }
 </script>
 
@@ -266,5 +267,16 @@ html {
 body {
   background: #E9E9E9;
   font-family: "Gilroy";
+}
+
+.cart_btn {
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  padding: 10px 0px;
+  align-items: center;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.05), 15px 15px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
 }
 </style>

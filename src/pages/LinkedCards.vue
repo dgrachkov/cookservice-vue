@@ -1,12 +1,13 @@
 <template>
-  <div class="w-[1170px] mx-auto px-4 mt-14">
+  <div class="max-w-[1170px] w-full mx-auto px-4 py-5 md:py-0 md:mt-14">
     
     <my-header-block>Привязанные карты</my-header-block>
 
     <!-- list of the cards -->
-    <div class="flex mt-14 gap-8 flex-wrap">
+    <div class="flex mt-8 md:mt-14 gap-4 md:gap-8 flex-wrap">
       <!-- card-item -->
-      <div class="card_item" v-for="card in userData.cardsList" :key="card.id">
+      <div class="card_item w-full md:w-[360px] md:h-[200px]"
+        v-for="card in userData.cardsList" :key="card.id">
         <div class="flex items-center justify-between">
           <div class="flex items-center">
             <img :src="checkingFirsNumber(card.number)" alt="" class="w-[46px] h-[30px]">
@@ -21,7 +22,7 @@
         </div>
       </div>
       <div v-if="userData.cardsList.length === 0">
-        <h3 class="font-bold text-lg text-[#212629]">Список карт пуст...</h3>
+        <h3 class="font-bold text-lg text-[#212629ad]">Список карт пуст...</h3>
       </div>
     </div>
 
@@ -59,15 +60,11 @@ export default {
 
 <style lang="scss" scoped>
 .card_item {
-  width: 360px;
-  height: 200px;
   cursor: pointer;
   color: rgba(33, 38, 41, 0.5);
   padding: 22px 20px 22px 20px;
   background: #E9E9E9;
-  background-color: #8EC5FC;
-  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-  background-image: linear-gradient( 129.1deg,  rgba(243,199,83,1) 26.8%, rgba(18,235,207,1) 114.1% );
+  background-image: linear-gradient(62deg, #A18CD1, #FBC2EB);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08), -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #FFFFFF, 5px 5px 20px #D3D3D3;
   border-radius: 13px;
   transition: box-shadow .3s;

@@ -197,14 +197,14 @@ export default {
   border-radius: 99px;
 }
 .food_item_btn_adaptive {
-  background: #E9E9E9;
+  border: 1px solid white;
   padding: 7px 25px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08), -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #FFFFFF, 5px 5px 20px #D3D3D3;
   border-radius: 99px;
   transition: background 0.3s;
 }
 .food_item_btn_adaptive:hover {
   background: #212629;
+  border: 1px solid #212629;
 }
 
 @media (min-width: 1200px) {

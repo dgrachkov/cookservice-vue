@@ -69,7 +69,6 @@ export default {
       if (e.additionally === true) {
         this.selectedFoodItem = e
       }
-      console.log('work')
     },
     addToFavorites(dish) {
       this.$emit('favorite', dish)
